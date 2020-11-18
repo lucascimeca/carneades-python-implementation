@@ -1,0 +1,13 @@
+{
+arg1(0.5): inappropriate_photography; private_property, prohibited; # ;
+arg2(0.4): -inappropriate_photography; public_property; of_people_in_privacy;
+arg3(0.3): of_people_in_privacy; secluded; #;
+arg4(0.8): prohibited; proof_of_sign; unreliable_proof
+arg5(0.8): public_property; state_ownership, governament_ownership, public_ownership; prohibited ;
+}
+{
+inappropriate_photography, beyond_reasonable_doubt;
+}
+{
+secluded, proof_of_sign, governament_ownership, state_ownership;
+}

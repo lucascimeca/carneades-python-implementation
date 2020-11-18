@@ -1,0 +1,14 @@
+CAES CASE EXPLANATION
+
+{
+arg1(0.8): murder; killing, malice; 187_excluded ;
+arg2(0.6): 187_excluded; self_defence; 197_excluded;
+arg3(0.4): self_defence; witness1; unreliable1;
+arg4(0.4): -self_defence; witness2; unreliable2;
+}
+{
+murder, beyond_reasonable_doubt;
+}
+{
+witness1,witness2, malice, killing;
+}

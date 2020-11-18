@@ -1,0 +1,13 @@
+{
+arg1(0.8): human_trafficking; transport_exploit_person; # ;
+arg2(0.4) transport_exploit_person; intent_of_exploit, knowledge_of_exploit; #;
+arg3(0.4): -transport_exploit_person; consense, witness1; unreliable1;
+arg4(0.6) -human_trafficking; not_uk_citizen; uk_territory;
+arg5(0.7): not_uk_citizen; passport; not_authentic;
+}
+{
+human_trafficking, beyond_reasonable_doubt;
+}
+{
+witness1,-not_authentic, intent_of_exploit;
+}

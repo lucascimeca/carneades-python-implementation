@@ -1,0 +1,64 @@
+
+---------------------------------------SYNTAX EXAMPLE FILE-----------------------------------------------------------------------------	
+
+
+the file needs to be split in exactly three sets of curly brackets to specify arguments, 
+proof standards and assumptions respectively
+
+
+
+------------------
+----ARGUMENTS-----
+------------------
+
+NOTE: the arguments should be written in the following sintax:    Argument_Name(audience_weight): conclusions; premises; exceptions;
+
+- the weight needs to be put in round parenthesis 
+- a ':' separates the argument name and weight from the parameters
+- three sets of ';' separate each parameter section
+- a '#' if nothing applies for the specific case
+- separate each argument description by a new line
+
+
+EXAMPLE:
+
+{
+arg1(0.8): murder; kill, intent; # ;
+
+arg2(0.3): intent; witness1; unreliable1;
+
+arg3(0.7): -intent; witness2; unreliable2;
+}
+
+
+
+
+---------------------
+--PROOF STANDARDS----
+---------------------
+
+Proof standards need to be put as a semicolon separated list in the following format:    proposition1, name_of_proofstandard1;
+
+- semicolon separated list
+- commas separate propositions from the proof standard names
+
+
+EXAMPLE:
+
+{
+intent, beyond_reasonable_doubt;
+}
+
+
+
+---------------------
+----ASSUMPTIONS------
+---------------------
+
+The assumptions can be inserted as a comma separated list
+
+EXAMPLES:
+
+{
+kill, witness1, witness2, unreliable2;
+}

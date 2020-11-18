@@ -1,0 +1,27 @@
+CAES CASE EXPLANATION
+
+Inappropriate Protography
+
+This example models cases of inappropriate photography. The proposition to prove is wether someone is guilty of 
+having broken the law by taking photos when they should not have. If the photos were taken in a private property or 
+if there were signs that clearly prohibited taking photos then the photographer might have broken the law, proofs of signs might have 
+to be provided. If photos were taken in a public property, it isn't in most cases against the law; exceptions to
+that can be taking pictures of people in privacy (or where they can expected to be private) or if it's clearly stated that it isn't allowed
+to take pictures.
+
+
+{
+arg1(0.5): inappropriate_photography; private_property, prohibited; # ;
+arg2(0.6): -inappropriate_photography; public_property; of_people_in_privacy;
+arg3(0.5): of_people_in_privacy; secluded; #;
+arg4(0.3): prohibited; proof_of_sign; unreliable_proof;
+arg5(0.5): public_property; state_ownership;;
+arg5(0.4): public_property; public_ownership;;
+arg6(0.6): public_property; governament_ownership;;
+}
+{
+inappropriate_photography, beyond_reasonable_doubt;
+}
+{
+private_property, proof_of_sign, governament_ownership;
+}

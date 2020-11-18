@@ -1,0 +1,11 @@
+{
+arg1(0.8): murder; kill, intent; # ;
+arg2(0.3): intent; witness1; unreliable1;
+arg3(0.8): -intent; witness2; unreliable2;
+}
+{
+intent beyond_reasonable_doubt;
+}
+{
+kill, witness1, witness2, unreliable2;
+}

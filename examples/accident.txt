@@ -1,0 +1,24 @@
+CAES CASE EXPLANATION
+
+Car Accident
+
+This example models cases of car accidents. The proposition to prove is wether an accident was someone's fault.
+An accident is someone's fault if they caused the accident or if the violated traffic laws at the time of the accident.
+Even in the two cases above mentioned, if one of the two drivers was at the rear of the other it is he/she that most likely (not always) 
+will have the fault, given they have failed to stop the car in time.
+
+
+{
+arg1(0.5): accident_fault; caused_it, violated_traffic_laws; # ;
+arg2(0.4): caused_it; witness1; unreliable1;
+arg3(0.45): violated_traffic_laws; witness2; unreliable2;
+arg4(0.5): -accident_fault; -caused_it, -violated_traffic_laws; was_behind;
+arg5(0.5): was_behind; witness3; unreliable3;
+arg6(0.7): -caused_it; witness4; unreliable4;
+}
+{
+accident_fault, dialectical_validity;
+}
+{
+witness1, witness2, witness3, witness4;
+}

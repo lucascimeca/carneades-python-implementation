@@ -1,0 +1,13 @@
+{
+arg1(0.8): accident_fault; caused_it, violated_traffic_laws; # ;
+arg2(0.4): caused_it; witness1; unreliable1;
+arg3(0.4): violated_traffic_laws; witness2; unreliable2;
+arg4(0.4): -accident_fault; -caused_it, -violated_traffic_laws; was_behind;
+arg5(0.5): was_behind; witness3; unreliable3;
+}
+
+accident_fault, beyond_reasonable_doubt;
+
+{
+witness1,witness3, unreliable2;
+}

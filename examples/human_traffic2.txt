@@ -1,0 +1,29 @@
+CAES CASE EXPLANATION
+
+Human Trafficking
+
+This example models cases of human trafficking. The proposition to prove is wether someone has trafficked in humans. A person can be
+charged of human trafficking if he/she has arranged transportation for a person that was being exploited, either their intent was to exploit the person
+or even if marely they knew of someone else's intent in the exploit of the person; things might be different if the transporting was consensual.
+The laws of human trafficking as presented applies if the people charged are UK citizens or, even in case they aren't, if they were in UK territory during any of the 
+transportation process. 
+
+
+{
+arg1(0.6): human_trafficking; transport_exploit_person;;
+arg2(0.5): transport_exploit_person; intent_of_exploit, knowledge_of_exploit;;
+arg7(0.5): knowledge_of_exploit; witness2; unreliable2;
+arg3(0.5): -transport_exploit_person; consense;;
+arg6(0.4): consense; witness1; unreliable1;
+arg4(0.1): -human_trafficking; not_uk_citizen; uk_territory;
+arg5(0.7): not_uk_citizen; passport; not_authentic;
+}
+{
+human_trafficking, beyond_reasonable_doubt;
+transport_exploit_person, clear_and_convincing;
+}
+{
+intent_of_exploit, witness1, witness2, passport;
+}
+
+
